@@ -1,0 +1,309 @@
+13:39:19 **** Incremental Build of configuration Debug for project Bai6_ADC_PWM ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/sensor_data_display.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sensor_data_display.d" -MT"Core/Src/sensor_data_display.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sensor_data_display.o"
+../Core/Src/sensor_data_display.c: In function 'uart_display_float':
+../Core/Src/sensor_data_display.c:17:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   17 |         uart_Rs232SendString(".");
+      |                              ^~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c: In function 'sensor_data_send_serial':
+../Core/Src/sensor_data_display.c:66:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   66 |         uart_Rs232SendString("\n");
+      |                              ^~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:69:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   69 |         uart_Rs232SendString(":");
+      |                              ^~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:71:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   71 |         uart_Rs232SendString(":");
+      |                              ^~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:73:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   73 |         uart_Rs232SendString("\n");
+      |                              ^~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:75:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   75 |         uart_Rs232SendString("Voltage: ");
+      |                              ^~~~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:77:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   77 |         uart_Rs232SendString(" mV");
+      |                              ^~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:78:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   78 |         uart_Rs232SendString("\n");
+      |                              ^~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:80:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   80 |         uart_Rs232SendString("Current: ");
+      |                              ^~~~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:82:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   82 |         uart_Rs232SendString(" mA");
+      |                              ^~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:83:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   83 |         uart_Rs232SendString("\n");
+      |                              ^~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:85:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   85 |         uart_Rs232SendString("Power Usage: ");
+      |                              ^~~~~~~~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:87:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   87 |         uart_Rs232SendString(" mW");
+      |                              ^~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:88:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   88 |         uart_Rs232SendString("\n");
+      |                              ^~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:90:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   90 |         uart_Rs232SendString("Light: ");
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:91:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   91 |         uart_Rs232SendString(light_density);
+      |                              ^~~~~~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:92:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   92 |         uart_Rs232SendString("\n");
+      |                              ^~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:94:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   94 |         uart_Rs232SendString("Humid: ");
+      |                              ^~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:96:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   96 |         uart_Rs232SendString(" %");
+      |                              ^~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:97:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   97 |         uart_Rs232SendString("\n");
+      |                              ^~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:99:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+   99 |         uart_Rs232SendString("Temperature: ");
+      |                              ^~~~~~~~~~~~~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:101:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+  101 |         uart_Rs232SendString(" C");
+      |                              ^~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:102:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+  102 |         uart_Rs232SendString("\n");
+      |                              ^~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:104:30: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+  104 |         uart_Rs232SendString("\n");
+      |                              ^~~~
+      |                              |
+      |                              char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c: In function 'sensor_data_display':
+../Core/Src/sensor_data_display.c:162:54: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+  162 |                                 uart_Rs232SendString(":");
+      |                                                      ^~~
+      |                                                      |
+      |                                                      char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:164:54: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+  164 |                                 uart_Rs232SendString(":");
+      |                                                      ^~~
+      |                                                      |
+      |                                                      char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:166:54: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+  166 |                                 uart_Rs232SendString("\n");
+      |                                                      ^~~~
+      |                                                      |
+      |                                                      char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+../Core/Src/sensor_data_display.c:167:54: warning: pointer targets in passing argument 1 of 'uart_Rs232SendString' differ in signedness [-Wpointer-sign]
+  167 |                                 uart_Rs232SendString("Alert High Humid");
+      |                                                      ^~~~~~~~~~~~~~~~~~
+      |                                                      |
+      |                                                      char *
+In file included from ../Core/Inc/sensor_data_display.h:30,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Inc/uart.h:16:36: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'char *'
+   16 | void uart_Rs232SendString(uint8_t* str);
+      |                           ~~~~~~~~~^~~
+In file included from ../Core/Inc/sensor_data_display.h:27,
+                 from ../Core/Src/sensor_data_display.c:8:
+../Core/Src/sensor_data_display.c: At top level:
+../Core/Inc/lcd.h:83:13: warning: 'LCD_WR_DATA' declared 'static' but never defined [-Wunused-function]
+   83 | static void LCD_WR_DATA(uint16_t data);
+      |             ^~~~~~~~~~~
+../Core/Inc/lcd.h:84:17: warning: 'LCD_RD_DATA' declared 'static' but never defined [-Wunused-function]
+   84 | static uint16_t LCD_RD_DATA(void);
+      |                 ^~~~~~~~~~~
+arm-none-eabi-gcc -o "Bai6_ADC_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\BK\HK231\ES\Lab_678\BKIT_ARM4_Bai6_ADC_PWM-main\Bai6_ADC_PWM\STM32F407ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Bai6_ADC_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Bai6_ADC_PWM.elf
+ 
+arm-none-eabi-size  Bai6_ADC_PWM.elf 
+arm-none-eabi-objdump -h -S Bai6_ADC_PWM.elf  > "Bai6_ADC_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  51784	    116	   2796	  54696	   d5a8	Bai6_ADC_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: Bai6_ADC_PWM.list
+ 
+
+13:39:21 Build Finished. 0 errors, 30 warnings. (took 2s.260ms)
+

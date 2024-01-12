@@ -1,0 +1,6 @@
+../Core/Src/fsm_traffic_light.c:23:6:led_blink	1
+../Core/Src/fsm_traffic_light.c:41:6:display_led	11
+../Core/Src/fsm_traffic_light.c:116:6:mode_normal	11
+../Core/Src/fsm_traffic_light.c:159:6:increase_time_led	8
+../Core/Src/fsm_traffic_light.c:188:6:decrease_time_led	8
+../Core/Src/fsm_traffic_light.c:218:6:fsm_traffic_light	36

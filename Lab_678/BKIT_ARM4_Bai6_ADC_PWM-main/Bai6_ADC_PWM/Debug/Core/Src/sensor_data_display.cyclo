@@ -1,0 +1,6 @@
+../Core/Src/sensor_data_display.c:12:6:uart_display_float	1
+../Core/Src/sensor_data_display.c:21:7:get_power_consumption	1
+../Core/Src/sensor_data_display.c:43:7:light_status	4
+../Core/Src/sensor_data_display.c:56:7:humid_simulation	1
+../Core/Src/sensor_data_display.c:62:6:sensor_data_send_serial	1
+../Core/Src/sensor_data_display.c:107:6:sensor_data_display	4

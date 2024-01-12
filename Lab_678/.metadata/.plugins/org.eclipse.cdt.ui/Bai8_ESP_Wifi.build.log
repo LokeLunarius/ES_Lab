@@ -1,0 +1,10 @@
+17:09:45 **** Incremental Build of configuration Debug for project Bai8_ESP_Wifi ****
+make -j8 all 
+arm-none-eabi-size  Bai8_ESP_Wifi.elf 
+   text	   data	    bss	    dec	    hex	filename
+  40136	     28	   2404	  42568	   a648	Bai8_ESP_Wifi.elf
+Finished building: default.size.stdout
+ 
+
+17:09:45 Build Finished. 0 errors, 0 warnings. (took 365ms)
+

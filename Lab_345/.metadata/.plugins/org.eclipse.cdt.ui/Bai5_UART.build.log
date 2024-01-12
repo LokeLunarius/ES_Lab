@@ -1,0 +1,10 @@
+13:48:42 **** Incremental Build of configuration Debug for project Bai5_UART ****
+make -j8 all 
+arm-none-eabi-size  Bai5_UART.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26468	    108	   2476	  29052	   717c	Bai5_UART.elf
+Finished building: default.size.stdout
+ 
+
+13:48:43 Build Finished. 0 errors, 0 warnings. (took 312ms)
+

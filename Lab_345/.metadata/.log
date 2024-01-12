@@ -1,0 +1,66 @@
+!SESSION 2023-12-29 11:42:18.289 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-12-29 11:42:40.624
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-12-29 11:42:40.646
+!MESSAGE Log4j2 initialized with config file D:\BK\HK231\ES\Lab_345\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-12-29 11:42:51.056
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.jobs 2 2 2023-12-29 11:45:17.508
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.ui.internal.Workbench$39
+!SESSION 2023-12-29 11:45:19.910 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-12-29 11:45:32.332
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-12-29 11:45:32.334
+!MESSAGE Log4j2 initialized with config file D:\BK\HK231\ES\Lab_345\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-12-29 11:45:42.917
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-29 11:47:01.439
+!MESSAGE Indexed 'Bai3_Lcd_button' (34 sources, 117 headers) in 9.29 sec: 9,759 declarations; 49,922 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.25%)
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-12-29 11:51:25.591
+!MESSAGE The workspace will exit with unsaved changes in this session.
+
+!ENTRY org.eclipse.core.jobs 2 2 2023-12-29 11:51:25.972
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2023-12-29 11:51:28.497 -----------------------------------------------
+eclipse.buildId=Version 1.14.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2023-12-29 11:51:40.195
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-12-29 11:51:46.417
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-12-29 11:51:46.419
+!MESSAGE Log4j2 initialized with config file D:\BK\HK231\ES\Lab_345\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-12-29 11:52:01.121
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-29 13:38:33.961
+!MESSAGE Indexed 'Bai4_I2C_Realtimeclock' (38 sources, 120 headers) in 2.86 sec: 10,551 declarations; 60,920 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.21%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-12-29 13:46:41.160
+!MESSAGE Indexed 'Bai5_UART' (41 sources, 123 headers) in 2.25 sec: 11,053 declarations; 65,550 references; 2 unresolved inclusions; 42 syntax errors; 147 unresolved names (0.19%)
